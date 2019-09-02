@@ -1,0 +1,14 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class DataOne {
+
+	public String retriveSomething()
+	{
+		return "dataOne";
+	}
+	
+	
+}

@@ -1,0 +1,25 @@
+package com.example.business;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
+
+import com.example.data.DataOne;
+@Service
+@Configuration
+
+public class BusinessOne {
+
+	@Autowired
+	private DataOne dataOne;
+	
+	public String calculate()
+	{
+		return dataOne.retriveSomething();
+	}
+	
+	
+	
+	
+	
+}

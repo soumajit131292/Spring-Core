@@ -1,0 +1,21 @@
+package com.example.business;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.data.DataOne;
+
+public class BusinessOne {
+
+	@Autowired
+	private DataOne dataOne;
+	
+	public String calculate()
+	{
+		dataOne.retriveSomething();
+	}
+	
+	
+	
+	
+	
+}

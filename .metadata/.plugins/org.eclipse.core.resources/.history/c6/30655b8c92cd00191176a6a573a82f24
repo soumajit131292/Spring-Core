@@ -1,0 +1,18 @@
+package com.bridgelabz.demo.cars;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.bridgelabz.demo.carspecs.CarSpecs;
+import com.bridgelabz.demo.engine.BsIV;
+@Component("mycorolla")
+public class Corolla implements CarSpecs {
+
+	@Autowired
+	private BsIV bs4;
+	public String specs() {
+
+		return "Toyota from Corolla"+bs4.engineSpecs();
+	}
+
+}

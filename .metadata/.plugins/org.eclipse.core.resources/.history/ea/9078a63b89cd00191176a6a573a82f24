@@ -1,0 +1,13 @@
+package com.bridgelabz.demo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Swift implements CarSpecs {
+
+	public String specs() {
+
+		return "Dzire from Swift";
+	}
+
+}

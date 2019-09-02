@@ -1,0 +1,16 @@
+package com.bridgelabz.demo.carapp;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class CarApp {
+
+	public static void main(String[] args) {
+		
+		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.bridgelabz.demo.engine;
+
+import com.bridgelabz.demo.carspecs.EngineSpecs;
+
+public class BsVI implements EngineSpecs{
+
+	public String engineSpecs() {
+		
+		return "BS6 ENGINE"
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+
+
+import com.bridgelabz.demo.carspecs.CarSpecs;
+
+public class Corolla implements CarSpecs {
+
+	public String specs() {
+
+		return "Toyota from Corolla";
+	}
+
+}

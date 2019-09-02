@@ -1,0 +1,20 @@
+package com.example.demo.aspect;
+
+import org.aspectj.lang.JoinPoint;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ArroundAspect {
+
+	Logger logger = LoggerFactory.getLogger(this.getClass());
+	//PointCut
+	//JointPoint
+	@ArroundAdvice("execution(* com.example.demo..*.*(..))")
+	public void before(JoinPoint joinPoint)
+	{
+		//Advice
+	logger.info("check user is present or not then allow {} ",joinPoint);	
+	}
+	
+	
+}

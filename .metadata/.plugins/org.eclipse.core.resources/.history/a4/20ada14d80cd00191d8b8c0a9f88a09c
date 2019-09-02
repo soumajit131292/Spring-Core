@@ -1,0 +1,12 @@
+package com.bridgelabz.demo.car;
+
+import com.bridgelabz.demo.carspecs.CarSpecs;
+
+public class Swift implements CarSpecs {
+
+	public String specs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

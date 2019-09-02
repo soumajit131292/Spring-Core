@@ -1,0 +1,32 @@
+package com.example.demo.aspect;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.context.annotation.Configuration;
+
+@Aspect
+@Configuration
+public class AspectAfter {
+
+	/*@AfterReturning(value="execution(* com.example.demo..*.*(..))",returning="result")
+	public void before(JoinPoint joinPoint,Object result)
+	{
+		//Advice
+	logger.info("{}returns this {} ",joinPoint,result);	
+	}*/
+	
+	/*@AfterThrowing(value="execution(* com.example.demo..*.*(..))",throwing="exception")
+	public void before(JoinPoint joinPoint,Exception exception)
+	{
+		//Advice
+	logger.info("{}returns this {} ",joinPoint,exception);	
+	}*/
+
+	@After(value="execution(* com.example.demo.business.*.*(..))")
+	public void before(JoinPoint joinPoint)
+	{
+		//Advice
+	logger.info("after excecution {} ",joinPoint);	
+	}
+	
+	
+}
